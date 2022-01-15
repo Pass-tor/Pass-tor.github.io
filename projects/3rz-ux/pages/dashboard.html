@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3RZ Crypto</title>
+    <link rel="stylesheet" href="../assets/css/styles.css">
+</head>
+
+<body>
+
+    <div id="root" class="page-dashboard">
+        <header class="container">
+            <div class="row">
+                <div class="col-md-2 col-4">
+                    <a href="../index.html" class="box-logo">
+                        <img src="../assets/img/3rz.png" alt="3RZ Crypto Branding">
+                    </a>
+                </div>
+                <div class="col-md-10 col-8">
+                    <nav>
+                        <ul class="top-menu d-flex justify-content-end">
+                            <li class="active hide-992">
+                                <a href="dashboard.html">Dashboard</a>
+                            </li>
+                            <li class="hide-992">
+                                <a href="historico.html">Histórico</a>
+                            </li>
+                            <li class="hide-992">
+                                <a href="contato.html">Contato/Ajuda</a>
+                            </li>
+                            <li class="hide-992">
+                                <button type="button" onclick="OpenLateralMenu()">
+                                    <i class="material-icons">person_outline</i>
+                                </button>
+                            </li>
+                            <li class="show-992">
+                                <button type="button" onclick="OpenLateralMenu()">
+                                    <i class="material-icons">menu</i>
+                                </button>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </header>
+
+        <aside class="lateral">
+            <button type="button" class="btn-close" onclick="CloseLateralMenu()"></button>
+            <div class="lateral-header">
+                <div class="username d-flex">
+                    <i class="material-icons">person_outline</i>
+                    Welison Menezes
+                </div>
+                <div class="email">welisonmenezes@transferoswiss.ch</div>
+            </div>
+            <ul class="lateral-menu">
+                <li class="active show-992">
+                    <a href="dashboard.html">Dashboard</a>
+                </li>
+                <li class="show-992">
+                    <a href="historico.html">Histórico</a>
+                </li>
+                <li>
+                    <a href="seus-dados.html">Seus Dados</a>
+                </li>
+                <li class="show-992">
+                    <a href="contato.html">Contato/Ajuda</a>
+                </li>
+                <li>
+                    <a href="termos.html">Termos de Uso</a>
+                </li>
+                <li>
+                    <a href="../index.html">
+                        Logout <i class="material-icons">east</i>
+                    </a>
+                </li>
+            </ul>
+            <div class="lateral-dash-info show-992">
+                <div class="dash-info">
+                    <h3>Balance</h3>
+                    <div class="dash-info-balance">
+                        50.000.000,00
+                    </div>
+                    <div class="dash-info-currency">
+                        BRZ
+                    </div>
+                </div>
+                <div class="dash-info">
+                    <h3>Profile</h3>
+                    <div class="dash-info-profile">
+                        Básico
+                    </div>
+                    <div class="dash-info-link">
+                        <a href="#">+ Info</a>
+                    </div>
+                </div>
+            </div>
+        </aside>
+        <div class="overlay" onclick="CloseLateralMenu()"></div>
+
+        <main class="container d-flex justify-content-center align-items-start">
+            <div class="row full-row justify-content-center">
+
+                <div class="col-lg-4 col-xl-4 col-6">
+                    <div class="card card-gray">
+                        <div class="card-header">
+                            <h2>Compra</h2>
+                        </div>
+                        <div class="card-body">
+
+                            <div class="card border-0 box-shadow">
+                                <a href="depositar-brl.html" class="card-body small-padding hvr-underline-from-center">
+
+                                    <div class="dash-box">
+                                        <div class="dash-box-header d-flex align-items-center">
+                                            <div class="circle">
+                                                <i class="material-icons">input</i>
+                                            </div>
+                                            <h3>Depositar BRL</h3>
+                                        </div>
+                                        <div class="dash-box-body">
+                                            <p>
+                                                Faça uma transferência bancária e receba BRZ como crédito sem taxas.
+                                            </p>
+                                            <div class="text-right action">
+                                                <i class="material-icons">east</i>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </a>
+                            </div>
+
+                            <div class="card border-0 box-shadow">
+                                <a href="sacar-brz.html" class="card-body small-padding hvr-underline-from-center">
+                                    
+                                    <div class="dash-box">
+                                        <div class="dash-box-header d-flex align-items-center">
+                                            <div class="circle">
+                                                <i class="material-icons">input</i>
+                                            </div>
+                                            <h3>Sacar BRZ Token</h3>
+                                        </div>
+                                        <div class="dash-box-body">
+                                            <p>
+                                                Transfira seu BRZ Token para uma carteira de sua preferência.
+                                            </p>
+                                            <div class="text-right action">
+                                                <i class="material-icons">east</i>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </a>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-xl-4 col-6">
+                    <div class="card card-gray">
+                        <div class="card-header">
+                            <h2>Venda</h2>
+                        </div>
+                        <div class="card-body">
+
+                            <div class="card border-0 box-shadow">
+                                <a href="depositar-brz.html" class="card-body small-padding hvr-underline-from-center">
+                                    
+                                    <div class="dash-box">
+                                        <div class="dash-box-header d-flex align-items-center">
+                                            <div class="circle">
+                                                <i class="material-icons">input</i>
+                                            </div>
+                                            <h3>Depositar BRZ Token</h3>
+                                        </div>
+                                        <div class="dash-box-body">
+                                            <p>
+                                                Transfira qualquer quantia de BRZ Token para uma carteira dedicada a sua conta.
+                                            </p>
+                                            <div class="text-right action">
+                                                <i class="material-icons">east</i>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </a>
+                            </div>
+
+                            <div class="card border-0 box-shadow">
+                                <a href="sacar-brl.html" class="card-body small-padding hvr-underline-from-center">
+
+                                    <div class="dash-box">
+                                        <div class="dash-box-header d-flex align-items-center">
+                                            <div class="circle">
+                                                <i class="material-icons">input</i>
+                                            </div>
+                                            <h3>Sacar BRL</h3>
+                                        </div>
+                                        <div class="dash-box-body">
+                                            <p>
+                                                A maneira mais fácil de converter seu BRZ Token em Reais, depositamos na sua conta bancária.
+                                            </p>
+                                            <div class="text-right action">
+                                                <i class="material-icons">east</i>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </a>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-xl-2 hide-992">
+                    
+                    <div class="card card-small">
+                        <div class="card-body">
+
+                            <div class="dash-info">
+                                <h3>Balance</h3>
+                                <div class="dash-info-balance">
+                                    50.000.000,00
+                                </div>
+                                <div class="dash-info-currency">
+                                    BRZ
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div class="card card-small">
+                        <div class="card-body">
+
+                            <div class="dash-info">
+                                <h3>Profile</h3>
+                                <div class="dash-info-profile">
+                                    Básico
+                                </div>
+                                <div class="dash-info-link">
+                                    <a href="#">+ Info</a>
+                                </div>
+                            </div>
+                            
+                        </div>
+                    </div>
+
+                    <div class="card card-small">
+                        <div class="card-body">
+
+                            <div class="dash-info">
+                                <h3>Hitórico</h3>
+                                <div class="dash-info-action">
+                                    <a href="historico.html" class="btn btn-primary btn-sm">Ver Histórico</a>
+                                </div>
+                            </div>
+                            
+                        </div>
+                    </div>
+
+                    <div class="card card-small">
+                        <div class="card-body">
+
+                            <div class="dash-info">
+                                <h3>Seus Dados</h3>
+                                <div class="dash-info-action">
+                                    <a href="seus-dados.html" class="btn btn-info btn-sm">Ver Seus Dados</a>
+                                </div>
+                            </div>
+                            
+                        </div>
+                    </div>
+                    
+
+                </div>
+
+            </div>
+        </main>
+    </div>
+
+    <script src="../assets/vendors/particles.js-master/particles.js"></script>
+    <script src="../assets/js/app.js"></script>
+    <script>InitParticlesJs("../assets/vendors/particles.js-master/particlesjs-config.json");</script>
+</body>
+
+</html>

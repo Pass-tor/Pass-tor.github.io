@@ -1,0 +1,93 @@
+.btn {
+    outline: none !important;
+    box-shadow: none !important;
+    font-size: 1rem;
+    font-weight: bold;
+}
+.btn:hover,
+.btn:focus,
+.btn-active {
+    border-color: transparent !important;
+    outline: none;
+}
+
+.btn-primary {
+    background-color: #04d5df;
+    border-color: #04c4ce;
+}
+.btn-primary:hover,
+.btn-primary:focus {
+    background-color: #04c4ce !important;
+}
+.btn-primary:active {
+    background-color: #0cafc6 !important;
+}
+
+.btn-info {
+    background-color: #009eea;
+    border-color: transparent;
+}
+.btn-info:hover,
+.btn-info:focus {
+    background-color: #0696db !important;
+}
+.btn-info:active {
+    background-color: #1488c0 !important;
+}
+
+.btn-lg {
+    padding: 1rem 1.75rem;
+}
+
+.btn-close {
+    width: 32px;
+    height: 32px;
+    transition: transform 0.5s;
+    z-index: 9;
+}
+.btn-close:hover {
+    opacity: 1;
+    transform: rotate(-90deg);
+    transform-origin: center center;
+}
+.btn-close:before,
+.btn-close:after {
+    position: absolute;
+    left: 15px;
+    content: " ";
+    height: 33px;
+    width: 2px;
+    background-color: #fff;
+    top: 0;
+}
+.btn-close:before {
+    transform: rotate(45deg);
+}
+.btn-close:after {
+    transform: rotate(-45deg);
+}
+
+.btn-back {
+    color: #fff !important;
+    font-weight: bold;
+}
+.btn-back i {
+    vertical-align: middle;
+    font-size: .8rem;
+}
+
+.btn-clear {
+    display: inline-block;
+    padding: 15px 20px;
+    position: relative;
+    color: #6e6e6e;
+    text-transform: uppercase;
+    font-size: 12px;
+    font-weight: normal;
+}
+.btn-clear > i {
+    position: absolute;
+    right: 1px;
+    top: 15px;
+    font-size: 17px;
+}
